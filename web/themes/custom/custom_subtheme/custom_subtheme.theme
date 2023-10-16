@@ -4,3 +4,11 @@
  * @file
  * custom subtheme theme file.
  */
+function custom_subtheme_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+    // Get current node url.
+    $node_url = $variables['elements']['#node']->toUrl()->toString();
+    // Check whether the node url is of required node or not.
+    if ($node_url === '/homepage') {
+      $suggestions[] = 'page__homepage';
+    }
+  }

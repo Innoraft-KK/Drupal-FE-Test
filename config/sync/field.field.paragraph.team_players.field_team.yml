@@ -1,0 +1,19 @@
+uuid: 6abc8adb-a906-4749-b93c-993880b717f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_team
+    - paragraphs.paragraphs_type.team_players
+id: paragraph.team_players.field_team
+field_name: field_team
+entity_type: paragraph
+bundle: team_players
+label: 'Team players name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

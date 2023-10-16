@@ -1,0 +1,29 @@
+uuid: a0f20128-d958-4e75-a5ab-e21bbfee30e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_2
+    - node.type.match_
+    - taxonomy.vocabulary.team_code
+id: node.match_.field_team_2
+field_name: field_team_2
+entity_type: node
+bundle: match_
+label: 'Team 2'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      team_code: team_code
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
