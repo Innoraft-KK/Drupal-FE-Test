@@ -1,0 +1,25 @@
+uuid: afe9805e-b3bb-4b11-add3-389a7f2e6ca3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_subtheme
+_core:
+  default_config_hash: 3gPl0s0Cn-1MvqDnlJuzSnwB_AG6isbRzYqezQYCK3E
+id: custom_subtheme_branding
+theme: custom_subtheme
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
