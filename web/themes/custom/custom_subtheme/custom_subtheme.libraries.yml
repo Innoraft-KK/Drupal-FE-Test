@@ -2,3 +2,23 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css: {type: external}
+homepage:
+  css:
+    theme:
+      css/style.css: {}
+      css/homepage.css: {}
+slider:
+  css:
+    theme:
+      css/style.css: {}
+      css/components/slider.css: {}
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: {type: external}
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: {type: external}
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external}
+    js/slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

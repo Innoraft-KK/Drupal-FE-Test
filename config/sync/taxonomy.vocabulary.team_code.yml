@@ -1,0 +1,8 @@
+uuid: 812b5182-f250-4554-88c1-8bff8b84b4ed
+langcode: en
+status: true
+dependencies: {  }
+name: 'Team Code'
+vid: team_code
+description: ''
+weight: 0
