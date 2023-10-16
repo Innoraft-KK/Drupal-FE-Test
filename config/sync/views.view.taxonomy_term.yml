@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.full
   module:
     - node
     - taxonomy
@@ -222,7 +222,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: full
       query:
         type: views_query
         options:
@@ -303,9 +304,54 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      sorts:
+        sticky:
+          id: sticky
+          table: taxonomy_index
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: sticky
+          exposed: false
+        created:
+          id: created
+          table: taxonomy_index
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       query:
         type: views_query
         options: {  }
+      defaults:
+        sorts: false
       display_extenders: {  }
       path: taxonomy/term/%
     cache_metadata:

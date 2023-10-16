@@ -2,6 +2,8 @@ uuid: 63854ae0-0d26-4681-a9f0-b3f48438d0ba
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - custom_subtheme
 _core:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /homepage

@@ -5,8 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.team.body
-    - field.field.node.team.field_players
     - field.field.node.team.field_team_code
+    - field.field.node.team.field_team_players
     - node.type.team
   module:
     - text
@@ -30,5 +30,5 @@ content:
     weight: 100
     region: content
 hidden:
-  field_players: true
   field_team_code: true
+  field_team_players: true

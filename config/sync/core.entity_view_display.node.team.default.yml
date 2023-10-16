@@ -4,11 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.team.body
-    - field.field.node.team.field_players
     - field.field.node.team.field_team_code
+    - field.field.node.team.field_team_players
     - node.type.team
   module:
-    - options
     - text
     - user
 id: node.team.default
@@ -23,13 +22,6 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_players:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_team_code:
     type: entity_reference_label
     label: above
@@ -37,6 +29,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_team_players:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   links:
     settings: {  }

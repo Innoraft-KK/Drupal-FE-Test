@@ -1,21 +1,21 @@
-uuid: fc268f7e-cf36-4803-af9a-26f95e127f78
+uuid: b86e63fa-251a-4001-b91f-995fee725944
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_players
+    - field.storage.node.field_team_players
     - node.type.team
   module:
-    - options
-id: node.team.field_players
-field_name: field_players
+    - text
+id: node.team.field_team_players
+field_name: field_team_players
 entity_type: node
 bundle: team
-label: Players
+label: 'Team Players'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: text

@@ -1,0 +1,23 @@
+uuid: 91ba5fc3-643c-4a7d-a24f-b1c777841908
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_players.field_team
+    - paragraphs.paragraphs_type.team_players
+id: paragraph.team_players.default
+targetEntityType: paragraph
+bundle: team_players
+mode: default
+content:
+  field_team:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

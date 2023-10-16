@@ -1,0 +1,10 @@
+uuid: c6fe8d55-49e9-4f14-a708-18f74c1dafb0
+langcode: en
+status: true
+dependencies: {  }
+id: team_players
+label: 'Team Players'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

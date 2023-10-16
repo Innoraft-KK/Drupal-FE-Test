@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.team.body
-    - field.field.node.team.field_players
     - field.field.node.team.field_team_code
+    - field.field.node.team.field_team_players
     - node.type.team
   module:
     - path
@@ -31,12 +31,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_players:
-    type: options_select
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_team_code:
     type: entity_reference_autocomplete
     weight: 7
@@ -44,6 +38,14 @@ content:
     settings:
       match_operator: CONTAINS
       match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_team_players:
+    type: text_textfield
+    weight: 26
+    region: content
+    settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }

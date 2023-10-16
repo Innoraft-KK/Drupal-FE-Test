@@ -29,46 +29,46 @@ content:
     region: content
   field_carousel_:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   field_date_:
     type: datetime_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_location:
     type: text_default
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_team1:
     type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_team_2:
-    type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_team_2:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }

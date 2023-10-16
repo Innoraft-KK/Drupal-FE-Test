@@ -1,0 +1,10 @@
+uuid: 2cc1c22d-93d9-411b-8beb-5c69afdf07bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.taxanomy_show
+label: 'Taxanomy Show'
+targetEntityType: node
+cache: true
